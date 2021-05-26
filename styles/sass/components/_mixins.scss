@@ -1,3 +1,18 @@
+/* Mixin de posicionamiento 1 */
+@mixin posicionamiento1 {
+    overflow: hidden; 
+	text-align: center; 
+	display: flex; 
+}
+
+/* Mixin de posicionamiento 2 */
+@mixin posicionamiento2 {
+    display: flex; 
+	align-items: center; 
+	justify-content: center;
+	position: absolute;
+}
+
 /* Mixin para vendor prefix transform-origin */
 @mixin transform-origin ($origin) {
     -webkit-transform-origin: $origin;
