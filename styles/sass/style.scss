@@ -1,6 +1,7 @@
 /* Imports */
 @import "https://fonts.googleapis.com/css?family=Lato:300&display=swap";
 @import "./components/variables-animaciones"; /* Importamos .scss de variables para los @keyframes */
+@import "./components/colors"; /* Importamos .scss de variables de colores */
 @import "./components/mixins"; /* Importamos .scss de mixins */
 
 /* general */
@@ -15,7 +16,7 @@ body {
 h1 {
 	font-size: 3.5vw;
 	font-weight: 300;
-	color: white;
+	color: $colorh1background;
 	font-family: "Lato";
 }
 
@@ -50,7 +51,7 @@ h1 {
 			left: 0;
 			width: 20vw;
 			height: 100vh;
-			background: white;
+			background: $colorh1background;
 			opacity: 0.05;
             @include transform-origin (center center);			
             @include transform (skew(30deg) scaleY(1) translate(0, 0));			 
@@ -70,31 +71,31 @@ h1 {
 .strip {
 	&:nth-child(1) {
 		.strip_content {
-			background-color: #244F75;
+			background-color: $firststripcolor;
             @include animation (strip--u4rx9pe, 0.5s);			
 		}
 	}
 	&:nth-child(2) {
 		.strip_content {
-			background-color: #60BFBF;
+			background-color: $secondstripcolor;
             @include animation (strip--u4rx9pg, 0.8s);			
 		}
 	}
 	&:nth-child(3) {
 		.strip_content {
-			background-color: #8C4B7E;
+			background-color: $thirdstripcolor;
             @include animation (strip--u4rx9q8, 0.7s);			
 		}
 	}
 	&:nth-child(4) {
 		.strip_content {
-			background-color: #F8BB44;
+			background-color: $fourthstripcolor;
             @include animation (strip--u4rx9qn, 1s);			
 		}
 	}
 	&:nth-child(5) {
 		.strip_content {
-			background-color: #F24B4B;
+			background-color: $fifthstripcolor;
             @include animation (strip--u4rx9r0, 1.1s);			
 		}
 	}
