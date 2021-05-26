@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300&display=swap";
 @import "./components/variables-animaciones"; /* Importamos .scss de variables para los @keyframes */
 @import "./components/colors"; /* Importamos .scss de variables de colores */
+@import "./components/otras-variables"; /* Importamos .scss con otro tipo de variables */
 @import "./components/mixins"; /* Importamos .scss de mixins */
 
 /* general */
@@ -22,7 +23,7 @@ h1 {
 
 /* strips */
 .strips {
-	height: 100vh;
+	height: $heightvalue;
 	width: 100vw;
     @include posicionamiento1;	
 	cursor: pointer;
@@ -30,13 +31,13 @@ h1 {
 		position: relative;
 		width: 19.9vw;
 		margin: 0.1vw;
-		height: 100vh;
+		height: $heightvalue;
         @include posicionamiento1;		
 		align-items: center;
 		justify-content: center;
 		.strip_content {
 			@include posicionamiento2;            
-			height: 100vh;
+			height: $heightvalue;
 			width: 100%;
 			text-align: center;
 		}
@@ -50,7 +51,7 @@ h1 {
 			top: 0;
 			left: 0;
 			width: 20vw;
-			height: 100vh;
+			height: $heightvalue;
 			background: $colorh1background;
 			opacity: 0.05;
             @include transform-origin (center center);			

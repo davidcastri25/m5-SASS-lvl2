@@ -1,11 +1,13 @@
 @charset "UTF-8";
 /* Imports */
 @import "https://fonts.googleapis.com/css?family=Lato:300&display=swap";
-/* Variables para la dirección de aparición de los bloques (desde dónde aparecen) */
+/* Variables para la dirección de aparición de los bloques animados (desde dónde aparecen) */
 /* Importamos .scss de variables para los @keyframes */
 /* Colores para los bloques animados */
 /* Color para el background animado de .strip_content:before y el H1 */
 /* Importamos .scss de variables de colores */
+/* Definimos en variable el valor de height */
+/* Importamos .scss con otro tipo de variables */
 /* Mixin de posicionamiento 1 */
 /* Mixin de posicionamiento 2 */
 /* Mixin para vendor prefix transform-origin */
