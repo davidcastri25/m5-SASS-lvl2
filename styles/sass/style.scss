@@ -1,5 +1,6 @@
 /* Imports */
 @import "https://fonts.googleapis.com/css?family=Lato:300&display=swap";
+@import "./components/variables-animaciones"; /* Importamos .scss de variables para los @keyframes */
 @import "./components/mixins"; /* Importamos .scss de mixins */
 
 /* general */
@@ -102,26 +103,26 @@ h1 {
 /* Animaciones de strips 1-5 */
 @keyframes strip--u4rx9pe { //:nth-child(1)
 	from {
-		transform: translate3d(-100%, 0, 0);
+		transform: $fromleft; //Desde izquierda - translate3d(-100%, 0, 0)
 	}
 }
 @keyframes strip--u4rx9pg { //:nth-child(2)
 	from {
-		transform: translate3d(0, 100%, 0);
+		transform: $frombottom; //Desde abajo - translate3d(0, 100%, 0)
 	}
 }
 @keyframes strip--u4rx9q8 { //:nth-child(3)
 	from {
-		transform: translate3d(0, -100%, 0);
+		transform: $fromtop; //Desde arriba - translate3d(0, -100%, 0)
 	}
 }
 @keyframes strip--u4rx9qn { //:nth-child(4)
 	from {
-		transform: translate3d(0, 100%, 0);
+		transform: $frombottom; //Desde abajo
 	}
 }
 @keyframes strip--u4rx9r0 { //:nth-child(5)
 	from {
-		transform: translate3d(100%, 0, 0);
+		transform: $fromright; //Desde derecha - translate3d(100%, 0, 0)
 	}
 }
